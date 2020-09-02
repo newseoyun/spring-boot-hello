@@ -34,3 +34,4 @@ out/
 .vscode/
 
 ### Custom ###
+src/resources/application.properties
