@@ -16,7 +16,9 @@ public class MemberController {
 //    @Autowired private MemberService memberService; 이건 필드주입방식인데 잘 안씀. 테스트할 때 주로 씀
 
     /* 이건 setter주입방식. 퍼블릭이니까 중간에 잘못 건들면 망가지므로 잘 안씀.
-    private MemberService memberService;
+    public static void setMemberService(MemberService memberService) {
+        MemberController.memberService = memberService;
+    }
 
     @Autowired
     public void setMemberService(MemberService memberService) {
@@ -52,8 +54,6 @@ public class MemberController {
 
         /* soutv */
         System.out.println("member = " + member.getName());
-
-
 
         memberService.join(member);
 
